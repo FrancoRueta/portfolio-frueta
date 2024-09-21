@@ -20,11 +20,11 @@ function Hero() {
   const linkedinIcon = theme === 'light' ? linkedinIconL : linkedinIconD;
 
   return (
-    <section id="hero" className="styles.container">
+    <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
         <img src={heroImage} className={styles.heroImg} alt="Hero"
         />
-        <img src={themeIcon} style={{cursor: 'pointer'}} alt="Color mode icon" className="styles.colorMode" onClick={toggleTheme}
+        <img src={themeIcon} className={styles.colorMode} alt="Color mode icon" onClick={toggleTheme}
         />
       </div>
       <div className={styles.info}>
@@ -42,7 +42,7 @@ function Hero() {
              alt="LinkedIn icon"/>
           </a>
         </span>
-        <p>With a passion for developing modern React web apps for commercial businesses.</p>
+        <p className={styles.description}>With a passion for developing modern React web apps for commercial businesses.</p>
         <a href={CV} download>
           <button className="hover">
             Resume
