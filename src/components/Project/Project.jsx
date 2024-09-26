@@ -3,16 +3,15 @@ import guitarba from '../../assets/guitarba.png'
 import vet from '../../assets/vet.png'
 import expenses from '../../assets/expenses.png'
 import ProjectCard from '../../common/ProjectCard'
+import cripto from '../../assets/cripto.png'
 
 function Project() {
 
-    // eslint-disable-next-line no-unused-vars
     const projectList = [
-        /* guitarba */
         {
             srcImg: guitarba,
             title: 'GuitarBA',
-            description: 'Web cart for a guitar store',
+            description: 'Guitar store page, includes store, cart and blog sections',
             link: 'https://guitarba.netlify.app/'
         },
         {
@@ -24,8 +23,14 @@ function Project() {
         {
             srcImg: vet,
             title: 'Vet App',
-            description: 'Web application to manage a veterinary clinic',
+            description: 'Handle appointments at a veterinary clinic',
             link: 'https://mascotasituz.netlify.app/'
+        },
+        {
+            srcImg: cripto,
+            title: 'Cripto Exchange',
+            description: 'Cripocurrency exchange calculator',
+            link: 'https://cotizador-cripto-fr.netlify.app/'
         }
     ];
 

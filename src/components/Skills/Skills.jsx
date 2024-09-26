@@ -1,9 +1,15 @@
 import React from 'react'
 import styles from './SkillsStyles.module.css'
-import checkMarkIcon from '../../assets/checkMark-light.svg'
+import checkMarkIconL from '../../assets/checkMark-light.svg'
+import checkMarkIconD from '../../assets/checkMark-dark.svg'
 import SkillList from '../../common/SkillList'
+import { useTheme } from '../../common/ThemeContext'
 
 function Skills() {
+  const {theme} = useTheme();
+
+  const checkMarkIcon = theme === 'light' ? checkMarkIconL : checkMarkIconD;
+
   return (
     <section id="skills" className={styles.container}>
         <h1 className='sectionTitle'>Skills</h1>
@@ -20,6 +26,14 @@ function Skills() {
             <SkillList srcImg={checkMarkIcon} skill='Axios'/>
             <SkillList srcImg={checkMarkIcon} skill='Redux'/>
             <SkillList srcImg={checkMarkIcon} skill='Bootstrap'/>
+        </div>
+        <hr/>
+        <div className={styles.skillList}>
+            <SkillList srcImg={checkMarkIcon} skill='Java'/>
+            <SkillList srcImg={checkMarkIcon} skill='Spring'/>
+            <SkillList srcImg={checkMarkIcon} skill='Java Server Faces'/>
+            <SkillList srcImg={checkMarkIcon} skill='Hibernate'/>
+            <SkillList srcImg={checkMarkIcon} skill='JUnit'/>
         </div>
     </section>
   )

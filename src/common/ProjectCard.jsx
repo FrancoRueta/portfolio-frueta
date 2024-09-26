@@ -1,11 +1,9 @@
-import Guitarba from '../assets/guitarba.png'
-
 function ProjectCard({srcImg, link, title, description}) {
   return (
-    <a href={link} target='_blank'>
+    <a className="minW350" href={link} target='_blank'>
         <img className='hover' src={srcImg} alt="Guitarba" />
         <h3>{title}</h3>
-        <p>{description}</p>
+        <p className='descriptionWrap'>{description}</p>
     </a>
   )
 }
