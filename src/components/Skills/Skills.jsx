@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './SkillsStyles.module.css'
-import checkMarkIconL from '../../assets/checkMark-light.svg'
-import checkMarkIconD from '../../assets/checkMark-dark.svg'
+import checkMarkIconL from '../../assets/checkmark-light.svg'
+import checkMarkIconD from '../../assets/checkmark-dark.svg'
 import SkillList from '../../common/SkillList'
 import { useTheme } from '../../common/ThemeContext'
 
