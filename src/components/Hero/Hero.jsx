@@ -8,7 +8,7 @@ import linkedinIconL from '../../assets/linkedin-light.svg'
 import twitterIconD from '../../assets/twitter-dark.svg'
 import githubIconD from '../../assets/github-dark.svg'
 import linkedinIconD from '../../assets/linkedin-dark.svg'
-import CV from '../../assets/CV.pdf'
+import cv from '../../assets/cv.pdf'
 import { useTheme } from '../../common/ThemeContext'
 
 function Hero() {
@@ -43,7 +43,7 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>With a passion for developing modern React web apps for commercial businesses.</p>
-        <a href={CV} download>
+        <a href={cv} download>
           <button className="hover">
             Resume
           </button>
