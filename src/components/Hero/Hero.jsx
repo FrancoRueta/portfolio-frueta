@@ -2,10 +2,8 @@ import styles from './HeroStyles.module.css'
 import heroImage from '../../assets/hero.png'
 import themeSun from '../../assets/sun.svg'
 import themeMoon from '../../assets/moon.svg'
-import twitterIconL from '../../assets/twitter-light.svg'
 import githubIconL from '../../assets/github-light.svg'
 import linkedinIconL from '../../assets/linkedin-light.svg'
-import twitterIconD from '../../assets/twitter-dark.svg'
 import githubIconD from '../../assets/github-dark.svg'
 import linkedinIconD from '../../assets/linkedin-dark.svg'
 import cv from '../../assets/cv.pdf'
@@ -15,7 +13,6 @@ function Hero() {
   const {theme, toggleTheme} = useTheme();
 
   const themeIcon = theme === 'light' ? themeSun : themeMoon;
-  const twitterIcon = theme === 'light' ? twitterIconL : twitterIconD;
   const githubIcon = theme === 'light' ? githubIconL : githubIconD;
   const linkedinIcon = theme === 'light' ? linkedinIconL : linkedinIconD;
 
@@ -31,9 +28,6 @@ function Hero() {
         <h1>Franco <br/> Rueta</h1>
         <h2>Fullstack developer</h2>
         <span>
-        <a href="https://twitter.com" target='_blank'>
-            <img src={twitterIcon} alt="Twitter icon"/>
-          </a>
           <a href="https://github.com/FrancoRueta" target='_blank'>
             <img src={githubIcon} alt="Github icon"/>
           </a>
