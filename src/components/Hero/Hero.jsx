@@ -42,7 +42,7 @@ function Hero() {
              alt="LinkedIn icon"/>
           </a>
         </span>
-        <p className={styles.description}>With a passion for developing modern React web apps for commercial businesses.</p>
+        <p className={styles.description}>With a passion for developing modern web apps and solutions for commercial businesses</p>
         <a href={cv} download>
           <button className="hover">
             Resume
